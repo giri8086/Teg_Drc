@@ -18,7 +18,7 @@ var disp = new JsonDB(new Config(path.join(__dirname, '/static/disp.json'), true
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs')
-
+app.use(express.static(__dirname + '/views'));
 app.use(
 	session({
 		secret: "eiojldvuhuioankfauiuhbnbljjkttewj",
