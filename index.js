@@ -34,7 +34,7 @@ app.use(express.static(path.join(__dirname, "static")));
 app.get("/", (request, response) => {
 	// If the user is loggedin
 	if (request.session.loggedin) {
-		response.redirect("/account-receivable");
+		response.redirect("/account-receivable.ejs");
 	} else {
 		// Not logged in
 		response.render("index");
@@ -130,15 +130,27 @@ app.get("/account-payable", function (request, response) {
 	response.end();
 });
 
-app.get("/dispute-ar", function (request, response) {
+// app.get("/dispute-ar", function (request, response) {
+
+// 	// If the user is loggedin
+// 	if (request.session.loggedin) {
+// 		response.render("dispute-ar", {
+// 			page: "ar",
+// 			loadid: request.query.loadid,
+// 			load: loads.getData("/" + request.query.loadid),
+// 		});
+// 	} else {
+// 		// Not logged in
+// 		response.redirect("/");
+// 	}
+// 	response.end();
+// });
+
+app.get("/dispute-new", function (request, response) {
 
 	// If the user is loggedin
 	if (request.session.loggedin) {
-		response.render("dispute-ar", {
-			page: "ar",
-			loadid: request.query.loadid,
-			load: loads.getData("/" + request.query.loadid),
-		});
+		response.render("./dispute-new.ejs");
 	} else {
 		// Not logged in
 		response.redirect("/");
