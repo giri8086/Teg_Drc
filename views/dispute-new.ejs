@@ -1,0 +1,367 @@
+<%- include('./partials/head-logged-new.ejs'); %>
+<main>
+    <section class="sidebar">
+        <%- include('./partials/sidebar.ejs'); %>
+    </section>
+    <section class="main_outer">
+        <div class="main_header">
+            <h1 class="main_header_title page_title">Haulage Exchange</h1>
+            <div class="profile_detail">
+                <p><i class="bi bi-person-circle"></i> Customer name</p>
+                <button>Logout</button>
+            </div>            
+        </div>
+        <div class="account_recievabel_menu_outer dispute_new_menu_outer">
+            <ul class="account_recievabel_menu">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Live aavailable</a></li>
+                <li><a href="#">My fleet</a></li>
+                <li><a href="#">Return journeys</a></li>
+                <li><a href="#">Loads</a></li>
+                <li><a href="#">Quotes</a></li>
+                <li class="active"><a href="#">Diary</a></li>
+                <li><a href="#">Freight vision</a></li>
+                <li><a href="#">Drivers & vehicles</a></li>
+            </ul>
+        </div>
+<!-- dispute table date header -->
+       <div class="dispute_table_new_date_outer">
+          <div class="date_and_live">
+            <div class="date"><i class="bi bi-calendar"></i>Diary at 09.34 GMT</div>
+            <div class="live">
+                <div class="live_radio">
+                    <input type="radio" name="live" checked>
+                    <label for="">Live</label>
+                </div>
+                <div class="live_radio">
+                    <input type="radio" name="live">
+                    <label for="">Split view</label>
+                </div>
+            </div>
+          </div>
+          <div class="expand_refresh">
+            <span class="expand">Expand all entries</span>
+            <button class="refresh">Refreshh</button>
+          </div>
+       </div>
+<!-- dispute table date header ends -->
+
+<!-- dispute table date tab and pagination -->
+    <div class="dispute_table_new_tab_pagination">
+        <div class="dispute_table_tab">
+            <ul>
+                <li>All</li>
+                <li>Unallocated</li>
+                <li>Allocated</li>
+                <li>In progress</li>
+                <li>Completed</li>
+                <li class="active">Cancelled</li>
+                <li>Expired</li>
+                <li>Awaiting feedback</li>
+                <li>Recent feedback</li>
+            </ul>
+        </div>
+        <div class="pagination_outer">
+            <div class="items_per_page">
+                <label for="">items per page</label>
+                <select name="" id="">
+                    <option value="">10</option>
+                </select>
+            </div>
+            <div class="pagination">
+                <ul>
+                    <li><a href=""><i class="bi bi-caret-left-fill"></i></a></li>
+                    <li><a href="">1-10 of 31</a></li>
+                    <li><a href=""><i class="bi bi-caret-right-fill"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!-- dispute table date tab and pagination ends -->
+<!-- new-dispute-table-starts -->
+    <div class="new-dispute_table_outer">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="new-dispute_table">
+            <tr>
+                <td>
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" class="new-dispute_table_inner">
+                        <tr>
+                            <td style="width:33.333%">
+                                <div class="dispute_table_inner_wrap">
+                                    <ul>
+                                        <li>
+                                            <label for="">From:</label>
+                                            <span>London sw11</span>
+                                        </li>
+                                        <li>
+                                            <label for="">To:</label>
+                                            <span>Leeds</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td style="width:33.333%">
+                                <div class="dispute_table_inner_wrap">
+                                    <ul>
+                                        <li>
+                                            <label for="">Pickup:</label>
+                                            <span>01:55-02:55 10/11/2022</span>
+                                        </li>
+                                        <li>
+                                            <label for="">Deliver:</label>
+                                            <span>ASAP</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td style="width:33.333%">
+                                <div class="dispute_table_inner_wrap">
+                                    <button>Deliver direct</button>
+                                    <p>Cancelled by TEG @ 02:03 (GMT) 10/11/2022</p>
+                                    <p>Load id :42443524</p>
+                                    <p><i class="bi bi-truck truck"></i><span>LMV</span></p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr class="dispute_table_actions">
+                <td>
+                    <div class="dispute_table_actions_btn_outer">
+                        <button><i class="bi bi-caret-down-fill"></i></button>
+                        <button>Repost</button>
+                        <button>Notes</button>
+                        <button>History</button>
+                        <button class="dispute_btn">Dispute</button>
+                        <button class="document_btn">Document</button> 
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="new-dispute_table">
+            <tr>
+                <td>
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" class="new-dispute_table_inner">
+                        <tr>
+                            <td style="width:33.333%">
+                                <div class="dispute_table_inner_wrap">
+                                    <ul>
+                                        <li>
+                                            <label for="">From:</label>
+                                            <span>London sw11</span>
+                                        </li>
+                                        <li>
+                                            <label for="">To:</label>
+                                            <span>Leeds</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td style="width:33.333%">
+                                <div class="dispute_table_inner_wrap">
+                                    <ul>
+                                        <li>
+                                            <label for="">Pickup:</label>
+                                            <span>01:55-02:55 10/11/2022</span>
+                                        </li>
+                                        <li>
+                                            <label for="">Deliver:</label>
+                                            <span>ASAP</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td style="width:33.333%">
+                                <div class="dispute_table_inner_wrap">
+                                    <button>Deliver direct</button>
+                                    <p>Cancelled by TEG @ 02:03 (GMT) 10/11/2022</p>
+                                    <p>Load id :42443524</p>
+                                    <p><i class="bi bi-truck truck"></i><span>LMV</span></p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr class="dispute_table_actions">
+                <td>
+                    <div class="dispute_table_actions_btn_outer">
+                        <button><i class="bi bi-caret-down-fill"></i></button>
+                        <button>Repost</button>
+                        <button>Notes</button>
+                        <button>History</button>
+                        <button class="dispute_btn">Dispute</button>
+                        <button class="document_btn">Document</button> 
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="new-dispute_table">
+            <tr>
+                <td>
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" class="new-dispute_table_inner">
+                        <tr>
+                            <td style="width:33.333%">
+                                <div class="dispute_table_inner_wrap">
+                                    <ul>
+                                        <li>
+                                            <label for="">From:</label>
+                                            <span>London sw11</span>
+                                        </li>
+                                        <li>
+                                            <label for="">To:</label>
+                                            <span>Leeds</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td style="width:33.333%">
+                                <div class="dispute_table_inner_wrap">
+                                    <ul>
+                                        <li>
+                                            <label for="">Pickup:</label>
+                                            <span>01:55-02:55 10/11/2022</span>
+                                        </li>
+                                        <li>
+                                            <label for="">Deliver:</label>
+                                            <span>ASAP</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td style="width:33.333%">
+                                <div class="dispute_table_inner_wrap">
+                                    <button>Deliver direct</button>
+                                    <p>Cancelled by TEG @ 02:03 (GMT) 10/11/2022</p>
+                                    <p>Load id :42443524</p>
+                                    <p><i class="bi bi-truck truck"></i><span>LMV</span></p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr class="dispute_table_actions">
+                <td>
+                    <div class="dispute_table_actions_btn_outer">
+                        <button><i class="bi bi-caret-down-fill"></i></button>
+                        <button>Repost</button>
+                        <button>Notes</button>
+                        <button>History</button>
+                        <button class="dispute_btn">Dispute</button>
+                        <button class="document_btn">Document</button> 
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="new-dispute_table">
+            <tr>
+                <td>
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" class="new-dispute_table_inner">
+                        <tr>
+                            <td style="width:33.333%">
+                                <div class="dispute_table_inner_wrap">
+                                    <ul>
+                                        <li>
+                                            <label for="">From:</label>
+                                            <span>London sw11</span>
+                                        </li>
+                                        <li>
+                                            <label for="">To:</label>
+                                            <span>Leeds</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td style="width:33.333%">
+                                <div class="dispute_table_inner_wrap">
+                                    <ul>
+                                        <li>
+                                            <label for="">Pickup:</label>
+                                            <span>01:55-02:55 10/11/2022</span>
+                                        </li>
+                                        <li>
+                                            <label for="">Deliver:</label>
+                                            <span>ASAP</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td style="width:33.333%">
+                                <div class="dispute_table_inner_wrap">
+                                    <button>Deliver direct</button>
+                                    <p>Cancelled by TEG @ 02:03 (GMT) 10/11/2022</p>
+                                    <p>Load id :42443524</p>
+                                    <p><i class="bi bi-truck truck"></i><span>LMV</span></p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr class="dispute_table_actions">
+                <td>
+                    <div class="dispute_table_actions_btn_outer">
+                        <button><i class="bi bi-caret-down-fill"></i></button>
+                        <button>Repost</button>
+                        <button>Notes</button>
+                        <button>History</button>
+                        <button class="dispute_btn">Dispute</button>
+                        <button class="document_btn">Document</button> 
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+<!-- new-dispute-table-starts-ends -->
+
+    </section>
+</main>
+
+<section class="popup_outer document_popup">
+    <span class="popup close dispute_popup_close"><i class="bi bi-x-lg"></i></span>
+    <div class="popup_inner">
+        <div class="doc_layout">Invoice</div>
+        <div class="doc_layout">Pod</div>
+    </div>
+</section>
+
+<section class="popup_outer dispute_popup">
+    <span class="popup close dispute_popup_close"><i class="bi bi-x-lg"></i></span>
+    <div class="popup_inner">
+        <textarea name="" id="" placeholder="Write your message"></textarea>
+        <button>Submit dispute</button>
+    </div>
+</section>
+
+<script>
+    $(document).ready(function(){
+
+$(".document_btn").click(function(){
+    $(".document_popup").addClass("open");
+})
+
+$(".dispute_popup_close").click(function(){
+    $(".document_popup").removeClass("open");
+})
+
+$(".dispute_btn").click(function(){
+    $(".dispute_popup").addClass("open");
+})
+
+$(".dispute_popup_close").click(function(){
+    $(".dispute_popup").removeClass("open");
+})
+
+})
+
+
+</script>
+
+<%- include('./partials/footer.ejs'); %>
